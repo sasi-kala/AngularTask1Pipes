@@ -1,0 +1,52 @@
+<h2>Angular Pipes</h2>
+<br>
+<h2>UpperCase:</h2><p style="font-size: 20px;">{{'homeworks' | uppercase}}</p>
+<br>
+<h2>LowerCase:</h2><p style="font-size: 20px;">{{'HOMEWORKS' | lowercase}}</p>
+<br>
+<h2>Currency:</h2><p style="font-size: 20px;">{{23465 | currency}}</p>
+<br>
+<h2>DatePipes</h2>
+<h2>Date:</h2><p style="font-size: 20px;">{{TodayDate | date}}</p>
+<h2>ShortDate:</h2><p style="font-size: 20px;">{{TodayDate | date: 'shortDate' }}</p>
+<h2>MediumDate:</h2><p style="font-size: 20px;">{{TodayDate | date: 'mediumDate' }}</p>
+<h2>LongDate:</h2><p style="font-size: 20px;">{{TodayDate | date: 'longDate' }}</p>
+<h2>FullDate:</h2><p style="font-size: 20px;">{{TodayDate | date: 'fullDate' }}</p>
+
+<br>
+
+<h2>shortTime:</h2><p style="font-size: 20px;">{{TodayDate | date: 'shortTime' }}</p>
+<h2>mediumTime:</h2><p style="font-size: 20px;">{{TodayDate | date: 'mediumTime' }}</p>
+<h2>longTime:</h2><p style="font-size: 20px;">{{TodayDate | date: 'longTime' }}</p>
+<h2>FullTime:</h2><p style="font-size: 20px;">{{TodayDate | date: 'fullTime' }}</p>
+<br>
+
+<!--Chaining Two Pipes-->
+<h2>short:</h2><p style="font-size: 20px;">{{TodayDate | date: 'short'| uppercase }}</p>
+<h2>Medium:</h2><p style="font-size: 20px;">{{TodayDate | date: 'medium' | uppercase }}</p>
+<h2>Long:</h2><p style="font-size: 20px;">{{TodayDate | date: 'long' | uppercase }}</p>
+<h2>Full:</h2><p style="font-size: 20px;">{{TodayDate | date: 'full' | uppercase }}</p>
+<br>
+
+<h2>DecimalPipe:</h2>
+<p style="font-size: 20px;">{{a | number:'4.1-4' }}</p>
+<br>
+
+<h2>PercentagePipe:</h2>
+<p style="font-size: 20px;"> {{b | percent}}</p>
+<!-- <h2>PercentagePipe:</h2><p style="font-size: 20px;"> {{c | percent:'4.1-4'}}</p> -->
+<br/>
+<h2>SlicePipes</h2>
+<p style="font-size: 20px;"> {{name | slice:3:12 }}</p>
+<h2>SlicePipe:</h2><p style="font-size: 20px;"> {{fruits | slice:2:5 }}</p>
+<p style="font-size: 20px;"> {{array | slice:0:4 }}</p>
+<p style="font-size: 20px;"> {{arr | slice:3:5 }}</p>
+
+<br>
+<h2>JSON</h2>
+<p style="font-size: 20px;"> {{value | json }}</p>
+
+<h2>CustomPipes</h2>
+<p style="font-size: 20px;"> {{ 5 | square }}</p>
+
+
